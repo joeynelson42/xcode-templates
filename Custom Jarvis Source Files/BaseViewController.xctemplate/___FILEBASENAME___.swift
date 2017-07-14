@@ -7,9 +7,10 @@ import UIKit
 
 class ___FILEBASENAME___: UIViewController {
     
-    // MARK: - View
+    // MARK: - Properties
     
-    let baseView = BaseView()
+    // MARK: - View
+    //let baseView = View()
     
     
     // MARK: - Life Cycle

@@ -6,6 +6,8 @@ import UIKit
 
 class ___FILEBASENAME___: UIView {
     
+    // MARK: - Properties
+    
     // MARK: - Subviews
     
     
