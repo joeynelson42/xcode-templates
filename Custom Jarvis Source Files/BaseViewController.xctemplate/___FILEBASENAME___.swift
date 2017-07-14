@@ -7,8 +7,9 @@ import UIKit
 
 class ___FILEBASENAME___: UIViewController {
     
-    // MARK: - View
+    // MARK: - Properties
     
+    // MARK: - View
     //let baseView = View()
     
     
