@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.JarvisBaseTemplate.dt.unit.singleViewApplication</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>Jarvis Ventures iOS template. Includes skeleton for UIViewControllers and UIViews, Network Router architecture, and helper methods for programmatic AutoLayout. Oh, and no storyboard.</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Swift</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>AppDelegate.swift</string>
+						<string>BaseViewController.swift</string>
+						<string>BaseView.swift</string>
+						<string>APIManager.swift</string>
+						<string>BaseRouter.swift</string>
+						<string>UIView+Extras.swift</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>AppDelegate.swift</key>
+		<dict>
+    		<key>Path</key>
+    		<string>AppDelegate.swift</string>
+		</dict>
+
+		<key>BaseViewController.swift</key>
+		<dict>
+    		<key>Path</key>
+    		<string>BaseViewController.swift</string>
+		</dict>
+
+		<key>BaseView.swift</key>
+		<dict>
+    		<key>Path</key>
+    		<string>BaseView.swift</string>
+		</dict>
+
+		<key>APIManager.swift</key>
+		<dict>
+    		<key>Path</key>
+    		<string>APIManager.swift</string>
+		</dict>
+
+		<key>BaseRouter.swift</key>
+		<dict>
+    		<key>Path</key>
+    		<string>BaseRouter.swift</string>
+		</dict>
+
+		<key>UIView+Extras.swift</key>
+		<dict>
+    		<key>Path</key>
+    		<string>UIView+Extras.swift</string>
+		</dict>
+
+	</dict>
+</dict>
+</plist>
