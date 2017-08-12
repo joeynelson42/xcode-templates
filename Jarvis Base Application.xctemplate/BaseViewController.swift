@@ -1,20 +1,22 @@
 //
-//  BaseViewController.swift
-//  Empty Application
+//  BaseViewController
 //
 
 import UIKit
 
 class BaseViewController: UIViewController {
     
-    // MARK: - View
+    // MARK: - Properties
     
+    // MARK: - View
     let baseView = BaseView()
     
     
     // MARK: - Life Cycle
     
     override func loadView() {
+        super.loadView()
+        
         view = baseView
         setupViewOnLoad()
     }

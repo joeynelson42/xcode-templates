@@ -4,15 +4,17 @@
 
 import Foundation
 import Alamofire
+import KeychainAccess
 
 public typealias JSONDictionary = [String: AnyObject]
 typealias RequestHeader = [String : String]?
 
 /// Routers must conform to this protocol otherwise the APIManager won't allow their use.
 protocol APIConfigured {
-    var method: String { get }
+    var method: HTTPMethod { get }
     var path: String { get }
     var headers: HTTPHeaders { get }
+    var parameters: Parameters { get }
     var baseUrl: String { get }
 }
 
@@ -23,10 +25,20 @@ protocol APIConfigured {
  */
 class BaseRouter: APIConfigured {
     
-    init() {}
-    let useError = "Override BaseRouter with a subclass."
+    // MARK : Properties
+    let keychain = Keychain(service: Constants.Keys.service)
     
-    var method: String {
+    let useError = "Override BaseRouter with a subclass."
+    var token = ""
+    
+    // MARK: Initializers
+    init() {
+        if let authorization = keychain[Constants.Keys.authToken]{
+            token = authorization
+        }
+    }
+    
+    var method: HTTPMethod {
         fatalError(useError)
     }
     
@@ -38,14 +50,21 @@ class BaseRouter: APIConfigured {
         fatalError(useError)
     }
     
+    var parameters: Parameters {
+        fatalError(useError)
+    }
+    
     var baseUrl: String {
         return ""
-//        return Constants.baseURL
     }
     
     /// headers that all requests include
     var baseHeaders: HTTPHeaders {
         return [ "Accept": "application/json" ]
+    }
+    
+    var authorizedHeaders: HTTPHeaders {
+        return [ "Authorization": "\(token)" ]
     }
     
     /// A string combining the baseUrl and the request's specific path

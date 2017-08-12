@@ -1,6 +1,9 @@
 //
-//  BaseViewController.swift
-//  Empty Application
+//  ___FILENAME___
+//  ___PROJECTNAME___
+//
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//___COPYRIGHT___
 //
 
 import UIKit
@@ -16,6 +19,8 @@ class ___FILEBASENAME___: UIViewController {
     // MARK: - Life Cycle
     
     override func loadView() {
+        super.loadView()
+        
         view = baseView
         setupViewOnLoad()
     }

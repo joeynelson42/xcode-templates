@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ___FILEBASENAME___: UIView {
+class ___FILEBASENAME___: UICollectionViewCell {
     
     // MARK: - Properties
     
@@ -20,11 +20,14 @@ class ___FILEBASENAME___: UIView {
     
     
     // MARK: - Initialization
-    
-    convenience init() {
-        self.init(frame: .zero)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         configureSubviews()
         configureLayout()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     /// Set view/subviews appearances

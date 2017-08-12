@@ -1,10 +1,12 @@
 //
-//  BaseView.swift
+//  BaseView
 //
 
 import UIKit
 
 class BaseView: UIView {
+    
+    // MARK: - Properties
     
     // MARK: - Subviews
     
@@ -23,7 +25,7 @@ class BaseView: UIView {
     
     /// Set view/subviews appearances
     fileprivate func configureSubviews() {
-
+        
     }
     
     /// Add subviews, set layoutMargins, initialize stored constraints, set layout priorities, activate constraints
@@ -32,7 +34,7 @@ class BaseView: UIView {
         // Activate NSLayoutAnchors within this closure
         NSLayoutConstraint.activate([
             
-        ])
+            ])
     }
 }
 

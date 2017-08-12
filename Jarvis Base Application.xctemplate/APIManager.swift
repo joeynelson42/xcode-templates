@@ -2,10 +2,9 @@
 //  APIManager.swift
 //
 
-
-import Foundation
 import Alamofire
-import Unbox
+import Foundation
+import SwiftyJSON
 
 /**
  Manages all network requests and implements the our Router architecture.
@@ -15,6 +14,7 @@ import Unbox
  3. Implement a completion block to use the request results (if any).
  4. Handle any errors (if any).
  */
+
 struct APIManager {
     
     // MARK: Properties
@@ -24,19 +24,21 @@ struct APIManager {
     init() {}
     
     // MARK: Methods
-    
-    //Here is an example GET request
-//    func getUsers(completion: @escaping (_ users: [User]) -> Void) {
-//        let router = UserRouter(endpoint: .GetUsers)
-//        Alamofire.request(router.fullPath, headers: router.fullHeaders).responseJSON { response in
-//            do{
-//                guard let jsonData = response.data else {return}
-//                let users: [User] = try unbox(data: jsonData)
-//                completion(users)
-//            }catch{
-//                print("Unable to read JSON, no profile exists\n \(error.localizedDescription)")
-//            }
-//        }
-//    }
+    func baseRequest(router: BaseRouter, onSuccess: @escaping (_ jsonResponse: JSON) -> Void, onFailure: @escaping (_ error: Error) -> Void) {
+        // TODO: Put the encoding on the router?
+        let encoding: ParameterEncoding = (router.method == .get) ? URLEncoding.default : JSONEncoding.default
+        Alamofire.request(router.fullPath, method: router.method, parameters: router.parameters, encoding: encoding, headers: router.authorizedHeaders).responseJSON { response in
+            
+            self.checkForErrors(result: response.result)
+            
+            switch response.result {
+            case .success(let data):
+                let json = JSON(data)
+                onSuccess(json)
+            case .failure(let error):
+                onFailure(error)
+            }
+        }
+    }
 }
 
