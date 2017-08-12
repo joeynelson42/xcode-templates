@@ -29,7 +29,7 @@ struct APIManager {
         let encoding: ParameterEncoding = (router.method == .get) ? URLEncoding.default : JSONEncoding.default
         Alamofire.request(router.fullPath, method: router.method, parameters: router.parameters, encoding: encoding, headers: router.authorizedHeaders).responseJSON { response in
             
-            self.checkForErrors(result: response.result)
+            // Do general error checking here
             
             switch response.result {
             case .success(let data):
