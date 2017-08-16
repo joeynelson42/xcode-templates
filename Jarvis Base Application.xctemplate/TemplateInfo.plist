@@ -44,6 +44,10 @@
 		<dict>
     		<key>Path</key>
     		<string>AppDelegate.swift</string>
+    		<key>Group</key>
+        	<array>
+            	<string>App Files</string>
+        	</array>
 		</dict>
 
 		<key>BaseViewController.swift</key>
@@ -62,18 +66,30 @@
 		<dict>
     		<key>Path</key>
     		<string>APIManager.swift</string>
+    		<key>Group</key>
+        	<array>
+            	<string>Networking</string>
+        	</array>
 		</dict>
-
+		
 		<key>BaseRouter.swift</key>
 		<dict>
     		<key>Path</key>
     		<string>BaseRouter.swift</string>
+    		<key>Group</key>
+        	<array>
+            	<string>Networking</string>
+        	</array>
 		</dict>
 
 		<key>UIView+Extras.swift</key>
 		<dict>
     		<key>Path</key>
     		<string>UIView+Extras.swift</string>
+    		<key>Group</key>
+        	<array>
+            	<string>Class Extensions</string>
+        	</array>
 		</dict>
 
 	</dict>
