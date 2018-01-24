@@ -3,7 +3,7 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
+//  ___COPYRIGHT___
 //
 
 import UIKit
@@ -24,6 +24,7 @@ class ___FILEBASENAME___: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configureSubviews()
+        configureTesting()
         configureLayout()
     }
     
@@ -34,6 +35,11 @@ class ___FILEBASENAME___: UITableViewCell {
     /// Set view/subviews appearances
     fileprivate func configureSubviews() {
         
+    }
+    
+    /// Set AccessibilityIdentifiers for view/subviews
+    fileprivate func configureTesting() {
+        accessibilityIdentifier = "\(___FILEBASENAME___)"
     }
     
     /// Add subviews, set layoutMargins, initialize stored constraints, set layout priorities, activate constraints

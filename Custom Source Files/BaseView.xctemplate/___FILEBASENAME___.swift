@@ -3,7 +3,7 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
+//  ___COPYRIGHT___
 //
 
 import UIKit
@@ -33,8 +33,9 @@ class ___FILEBASENAME___: UIView {
         
     }
     
+    /// Set AccessibilityIdentifiers for view/subviews
     fileprivate func configureTesting() {
-        accessibilityIdentifier = "___FILEBASENAME___"
+        accessibilityIdentifier = "\(___FILEBASENAME___)"
     }
     
     /// Add subviews, set layoutMargins, initialize stored constraints, set layout priorities, activate constraints

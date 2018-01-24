@@ -3,7 +3,7 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
+//  ___COPYRIGHT___
 //
 
 import UIKit
@@ -23,6 +23,7 @@ class ___FILEBASENAME___: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureSubviews()
+        configureTesting()
         configureLayout()
     }
     
@@ -33,6 +34,11 @@ class ___FILEBASENAME___: UICollectionViewCell {
     /// Set view/subviews appearances
     fileprivate func configureSubviews() {
         
+    }
+    
+    /// Set AccessibilityIdentifiers for view/subviews
+    fileprivate func configureTesting() {
+        accessibilityIdentifier = "\(___FILEBASENAME___)"
     }
     
     /// Add subviews, set layoutMargins, initialize stored constraints, set layout priorities, activate constraints
