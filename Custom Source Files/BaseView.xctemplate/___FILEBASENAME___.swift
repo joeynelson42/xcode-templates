@@ -24,12 +24,17 @@ class ___FILEBASENAME___: UIView {
     convenience init() {
         self.init(frame: .zero)
         configureSubviews()
+        configureTesting()
         configureLayout()
     }
     
     /// Set view/subviews appearances
     fileprivate func configureSubviews() {
         
+    }
+    
+    fileprivate func configureTesting() {
+        accessibilityIdentifier = "___FILEBASENAME___"
     }
     
     /// Add subviews, set layoutMargins, initialize stored constraints, set layout priorities, activate constraints
