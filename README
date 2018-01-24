@@ -1,6 +1,12 @@
-README 
+# Xcode Templates
+> Some simple templates that speed up my workflow, more to come when I find myself in the mood
 
-Run this while in the directory of the Xcode-Templates: sudo ./MoveTemplates.sh
+
+## Installation
+In your terminal, navigate to the directory of the Xcode-Templates then run:
+```
+sudo ./MoveTemplates.sh
+```
 
 If that doesn't work try changing the permissions and run the above command again.
 
