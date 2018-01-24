@@ -1,7 +1,9 @@
 README 
 
-Run this while in the directory of the Jarvis-iOS-Templates: sudo ./MoveTemplates.sh
+Run this while in the directory of the Xcode-Templates: sudo ./MoveTemplates.sh
 
 If that doesn't work try changing the permissions and run the above command again.
 
 To change permissions run: chmod a+x ./MoveTemplates.sh
+
+(Script is the handiwork of @jnwagstaff)
