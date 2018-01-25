@@ -60,6 +60,39 @@ extension UIView {
         rightAnchor.constraint(equalTo: superview.rightAnchor, constant: constant).isActive = true
     }
     
+    // MARK: - Iphone X Constraints
+    var safeTopAnchor: NSLayoutYAxisAnchor {
+        if #available(iOS 11, *) {
+            return safeAreaLayoutGuide.topAnchor
+        } else {
+            return topAnchor
+        }
+    }
+    
+    var safeLeftAnchor: NSLayoutXAxisAnchor {
+        if #available(iOS 11, *) {
+            return safeAreaLayoutGuide.leftAnchor
+        } else {
+            return leftAnchor
+        }
+    }
+    
+    var safeBottomAnchor: NSLayoutYAxisAnchor {
+        if #available(iOS 11, *) {
+            return safeAreaLayoutGuide.bottomAnchor
+        } else {
+            return bottomAnchor
+        }
+    }
+    
+    var safeRightAnchor: NSLayoutXAxisAnchor {
+        if #available(iOS 11, *) {
+            return safeAreaLayoutGuide.rightAnchor
+        } else {
+            return rightAnchor
+        }
+    }
+    
     // MARK: - Layout Margins Guide Shortcut
     
     var leftMargin: NSLayoutXAxisAnchor {
