@@ -7,10 +7,4 @@ In your terminal, navigate to the directory of the Xcode-Templates then run:
 ```
 sudo ./MoveTemplates.sh
 ```
-
-If that doesn't work try changing the permissions and run the above command again.
-```
-chmod a+x ./MoveTemplates.sh
-```
-
 (Script is the handiwork of [@jnwagstaff](https://github.com/jnwagstaff))
