@@ -3,18 +3,17 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
+//  ___COPYRIGHT___
 //
 
 import Foundation
-import Alamofire
-import SwiftyJSON
+//import Alamofire
 
-enum Endpoint {
+enum ___FILEBASENAME___Endpoint {
     
 }
 
-class Router: BaseRouter {
+class ___FILEBASENAME___: BaseRouter {
     
     var endpoint: UserEndpoint
     init(endpoint: UserEndpoint) {
