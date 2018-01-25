@@ -9,8 +9,6 @@ sudo ./MoveTemplates.sh
 ```
 
 If that doesn't work try changing the permissions and run the above command again.
-
-To change permissions run: 
 ```
 chmod a+x ./MoveTemplates.sh
 ```
