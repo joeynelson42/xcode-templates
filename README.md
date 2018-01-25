@@ -15,4 +15,4 @@ To change permissions run:
 chmod a+x ./MoveTemplates.sh
 ```
 
-(Script is the handiwork of @jnwagstaff)
+(Script is the handiwork of [@jnwagstaff](https://github.com/jnwagstaff))
