@@ -38,7 +38,7 @@ class ___FILEBASENAME___: UICollectionViewCell {
     
     /// Set AccessibilityIdentifiers for view/subviews
     fileprivate func configureTesting() {
-        accessibilityIdentifier = "\(___FILEBASENAME___)"
+        accessibilityIdentifier = "___FILEBASENAME___"
     }
     
     /// Add subviews, set layoutMargins, initialize stored constraints, set layout priorities, activate constraints
