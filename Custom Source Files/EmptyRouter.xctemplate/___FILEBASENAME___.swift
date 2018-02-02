@@ -7,7 +7,7 @@
 //
 
 import Foundation
-//import Alamofire
+import Alamofire
 
 enum ___FILEBASENAME___Endpoint {
     
@@ -40,7 +40,7 @@ class ___FILEBASENAME___: BaseRouter {
     
     override var headers: HTTPHeaders {
         switch endpoint {
-        
+        default: return ["Content-Type": "application/json"]
         }
     }
 }
