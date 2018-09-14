@@ -43,6 +43,15 @@ class ___FILEBASENAME___: BaseRouter {
         default: return ["Content-Type": "application/json"]
         }
     }
+    
+    override var encoding: ParameterEncoding {
+        switch method {
+            case .get:
+                return URLEncoding.default
+            default:
+                return JSONEncoding.default
+        }
+    }
 }
 
 // Implement all router related network calls within this extension
