@@ -13,7 +13,7 @@ class ___FILEBASENAME___: UIViewController {
     // MARK: - Properties
     
     // MARK: - View
-    //let baseView = View()
+    let baseView = UIView()
     
     
     // MARK: - Life Cycle
