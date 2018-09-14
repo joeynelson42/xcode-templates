@@ -16,6 +16,7 @@ protocol APIConfigured {
     var headers: HTTPHeaders { get }
     var parameters: Parameters { get }
     var baseUrl: String { get }
+    var encoding: ParameterEncoding { get }
 }
 
 /**
@@ -79,5 +80,9 @@ class BaseRouter: APIConfigured {
             combined[key] = value
         }
         return combined
+    }
+    
+    var encoding: ParameterEncoding {
+        fatalError(useError)
     }
 }
