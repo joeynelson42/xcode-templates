@@ -25,8 +25,7 @@ struct APIManager {
     // MARK: Methods
 //    func baseRequest(router: BaseRouter, onSuccess: @escaping (_ jsonResponse: JSON) -> Void, onFailure: @escaping (_ error: Error) -> Void) {
 //        // TODO: Put the encoding on the router?
-//        let encoding: ParameterEncoding = (router.method == .get) ? URLEncoding.default : JSONEncoding.default
-//        Alamofire.request(router.fullPath, method: router.method, parameters: router.parameters, encoding: encoding, headers: router.authorizedHeaders).responseJSON { response in
+//        Alamofire.request(router.fullPath, method: router.method, parameters: router.parameters, encoding: router.encoding, headers: router.authorizedHeaders).responseJSON { response in
 //
 //            // Do general error checking here
 //
