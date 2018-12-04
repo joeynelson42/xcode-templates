@@ -22,8 +22,8 @@ protocol APIConfigured {
 
 /**
  The BaseRouter is the superclass of our network routers.
- It should never be used explicitly, only inherited from.
- Any subclasses should ovverride the APIConfigured Protocol elements.
+ It should never be used directly, only inherited from.
+ Any subclasses should override the APIConfigured Protocol elements.
  */
 class BaseRouter: APIConfigured {
     
