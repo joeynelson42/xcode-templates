@@ -13,7 +13,7 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>Jarvis Ventures iOS template. Includes skeleton for UIViewControllers and UIViews, Network Router architecture, and helper methods for programmatic AutoLayout. Oh, and no storyboard.</string>
+	<string>iOS template. Includes skeleton for UIViewControllers and UIViews, Network Router architecture, and helper methods for programmatic AutoLayout. Oh, and no storyboard.</string>
 	<key>SortOrder</key>
 	<integer>1</integer>
 	<key>Options</key>
@@ -28,11 +28,13 @@
 					<key>Nodes</key>
 					<array>
 						<string>AppDelegate.swift</string>
-						<string>BaseViewController.swift</string>
-						<string>BaseView.swift</string>
 						<string>APIManager.swift</string>
 						<string>BaseRouter.swift</string>
-						<string>UIView+Extras.swift</string>
+						<string>UIView+.swift</string>
+						<string>UIImage+.swift</string>
+						<string>Collection+.swift</string>
+						<string>String+.swift</string>
+						<string>DateHelper.swift</string>
 					</array>
 				</dict>
 			</dict>
@@ -42,54 +44,79 @@
 	<dict>
 		<key>AppDelegate.swift</key>
 		<dict>
-    		<key>Path</key>
-    		<string>AppDelegate.swift</string>
-    		<key>Group</key>
-        	<array>
-            	<string>App Files</string>
-        	</array>
+			<key>Path</key>
+			<string>AppDelegate.swift</string>
+			<key>Group</key>
+			<array>
+				<string>App Files</string>
+			</array>
 		</dict>
-
-		<key>BaseViewController.swift</key>
-		<dict>
-    		<key>Path</key>
-    		<string>BaseViewController.swift</string>
-		</dict>
-
-		<key>BaseView.swift</key>
-		<dict>
-    		<key>Path</key>
-    		<string>BaseView.swift</string>
-		</dict>
-
 		<key>APIManager.swift</key>
 		<dict>
-    		<key>Path</key>
-    		<string>APIManager.swift</string>
-    		<key>Group</key>
-        	<array>
-            	<string>Networking</string>
-        	</array>
+			<key>Path</key>
+			<string>APIManager.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Networking</string>
+			</array>
 		</dict>
-		
 		<key>BaseRouter.swift</key>
 		<dict>
-    		<key>Path</key>
-    		<string>BaseRouter.swift</string>
-    		<key>Group</key>
-        	<array>
-            	<string>Networking</string>
-        	</array>
+			<key>Path</key>
+			<string>BaseRouter.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Networking</string>
+			</array>
+		</dict>
+		<key>DateHelper.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>DateHelper.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Extensions</string>
+			</array>
 		</dict>
 
-		<key>UIView+Extras.swift</key>
+		<key>String+.swift</key>
 		<dict>
-    		<key>Path</key>
-    		<string>UIView+Extras.swift</string>
-    		<key>Group</key>
-        	<array>
-            	<string>Class Extensions</string>
-        	</array>
+			<key>Path</key>
+			<string>String+.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Extensions</string>
+			</array>
+		</dict>
+
+		<key>Collection+.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Collection+.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Extensions</string>
+			</array>
+		</dict>
+
+		<key>UIImage+.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>UIImage+.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Extensions</string>
+			</array>
+		</dict>
+
+		<key>UIImage+.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>UIView+.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Extensions</string>
+			</array>
 		</dict>
 
 	</dict>

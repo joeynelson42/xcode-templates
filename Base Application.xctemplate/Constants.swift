@@ -20,21 +20,10 @@ struct Constants {
     }
     
     struct Fonts {
-        
         static func printFontNames() {
             UIFont.familyNames.sorted().forEach({ (familyName) in
                 debugPrint(UIFont.fontNames(forFamilyName: familyName))
             })
-        }
-        
-        // Example
-//        static func neon(fontSize: CGFloat) -> UIFont? { return UIFont(name: "Neon80s", size: fontSize) }
-    }
-    
-    
-    struct Colors {
-        static func flameOrange() -> UIColor {
-            return UIColor.fromHex(rgbValue: 0xE05828)
         }
     }
 }

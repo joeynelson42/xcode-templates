@@ -3,8 +3,9 @@
 //
 
 import Foundation
-import Alamofire
-import KeychainAccess
+//import Alamofire
+//import KeychainAccess
+//import SwiftyJSON
 
 public typealias JSONDictionary = [String: AnyObject]
 typealias RequestHeader = [String : String]?

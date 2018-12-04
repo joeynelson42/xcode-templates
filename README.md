@@ -5,6 +5,6 @@
 ## Installation
 In your terminal, navigate to the directory of the Xcode-Templates then run:
 ```
-sudo ./MoveTemplates.sh
+t
 ```
 (Script is the handiwork of [@jnwagstaff](https://github.com/jnwagstaff))

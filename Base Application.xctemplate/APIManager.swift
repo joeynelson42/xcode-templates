@@ -3,6 +3,7 @@
 //
 
 //import Alamofire
+//import SwiftyJSON
 import Foundation
 
 /**
@@ -13,6 +14,11 @@ import Foundation
  3. Implement a completion block to use the request results (if any).
  4. Handle any errors (if any).
  */
+
+struct APIError: Error {
+    var description: String
+    var statusCode: Int
+}
 
 struct APIManager {
     
