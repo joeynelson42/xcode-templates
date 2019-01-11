@@ -13,7 +13,7 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>iOS template. Includes skeleton for UIViewControllers and UIViews, Network Router architecture, and helper methods for programmatic AutoLayout. Oh, and no storyboard.</string>
+	<string>iOS template. Includes Network Router architecture, and helper methods for programmatic AutoLayout. Oh, and no storyboard.</string>
 	<key>SortOrder</key>
 	<integer>1</integer>
 	<key>Options</key>
@@ -110,6 +110,16 @@
 		</dict>
 
 		<key>UIImage+.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>UIImage+.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Extensions</string>
+			</array>
+		</dict>
+
+		<key>UIView+.swift</key>
 		<dict>
 			<key>Path</key>
 			<string>UIView+.swift</string>
